@@ -1,8 +1,0 @@
-- name: Accueil
-  link: /
-- name: Articles
-  link: articles.html
-- name: Code Review
-  link: code_review.html
-- name: About
-  link: about.html
