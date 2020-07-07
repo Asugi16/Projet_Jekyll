@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss",
+		"_sass/navigation.scss",
+		"_sass/footer.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n@import \"navigation\";\n@import \"footer\";",
+		"",
+		"",
+		".footer-bg { \r\n    background-color: red;\r\n}"
+	],
+	"names": [],
+	"mappings": "AGAA,AAAA,UAAU,CAAC,EACP,gBAAgB,EAAE,GAAG,GACxB"
+}
