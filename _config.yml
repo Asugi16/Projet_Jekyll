@@ -1,0 +1,22 @@
+collections:
+  articles:
+      output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+
+  - scope:
+      path: ""
+      type: "auteurs"
+    values:
+      layout: "auteur"
+
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+    
