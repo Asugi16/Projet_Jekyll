@@ -1,22 +1,19 @@
 collections:
-  articles:
-      output: true
+  authors:
+    output: true
 
 defaults:
   - scope:
       path: ""
-      type: "articles"
+      type: "authors"
     values:
-      layout: "article"
-
+      layout: "author"
   - scope:
       path: ""
-      type: "auteurs"
+      type: "posts"
     values:
-      layout: "auteur"
-
+      layout: "post"   
   - scope:
       path: ""
     values:
       layout: "default"
-    
