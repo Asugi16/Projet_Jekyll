@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Accueil</title>    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -70,22 +71,48 @@
 
    
     
-    <div id="footer">
+    <div class="footer-bg absolute-bottom text-center">
     <div class="container">
         <div class="row">
-            <div class="col-3">
-                About
+            <div class="col-md-3">
+                <h5>About</h5>
+                <p>A propos de nous.</p>
+                <p><a class="btn btn-secondary" href="/about.html" role="button">View details
+                        &raquo;</a></p>
             </div>
-            <div class="col-3">
-                Articles
+            <div class="col-md-3">
+                <h5>Articles</h5>
+                <p>Liste des articles concernant la veille technologique.</p>
+                <p><a class="btn btn-secondary" href="/blog.html" role="button">View details
+                        &raquo;</a></p>
             </div>
-            <div class="col-3">
-                Code Review
+            <div class="col-md-3">
+                <h5>Code Review</h5>
+                <p>Bouts de codes mis à disposition.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div>
-            <div class="col-3">
-                <img src="assets/images/DWWM.png" width="70" height="30" alt="DWWM">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-logo" src="assets/images/github2.png" width="70" height="50" alt="DWWM">
+                        <img class="img-logo" src="assets/images/afpa.png" width="65" height="50" alt="DWWM">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="img-logo" src="assets/images/matthias.png" width="70" height="30" alt="DWWM">
+                        <img class="img-logo" src="assets/images/oceane.png" width="70" height="30" alt="DWWM">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img class="img-logo" src="assets/images/DWWM.png" width="100" height="50" alt="DWWM">
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row thanks">
             <div class="col-12">
                 <p>&copy; Dedalus, Manon, Malik, Asugi, formation DWWM 2020</p>
