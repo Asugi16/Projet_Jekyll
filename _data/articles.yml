@@ -1,4 +1,14 @@
-- name: CSS
+- name: Html
   link: /
-- name: html
+- name: Css
   link: /
+- name: Sass 
+  link: /
+- name: Jekyll
+  link: /
+- name : Git
+  link : /
+- name : Gitpage
+  link : /
+- name : Bootstrap
+  link : /
