@@ -11,7 +11,7 @@
 		"@import \"main\";\n@import \"navigation\";\n@import \"footer\";",
 		"",
 		"",
-		".footer-bg { \n    background-color: red;\n    height: 50px;\n}"
+		".footer-bg { \r\n    background-color: red;\r\n    height: 50px;\r\n}"
 	],
 	"names": [],
 	"mappings": "AGAA,AAAA,UAAU,CAAC,EACP,gBAAgB,EAAE,GAAG,EACrB,MAAM,EAAE,IAAI,GACf"

@@ -1,14 +1,14 @@
 - name: Html
-  link: /
+  link: /html.html
 - name: Css
-  link: /
+  link: /css.html
 - name: Sass 
-  link: /
+  link: /sass.html
 - name: Jekyll
-  link: /
+  link: /Jekyll.html
 - name : Git
-  link : /
+  link : /git.html
 - name : Gitpage
-  link : /
+  link : /gitpage.html
 - name : Bootstrap
-  link : /
+  link : /Bootstrap.html
