@@ -1,24 +1,4 @@
 ---
-layout: post
+layout: category
+category_key: git
 ---
-<div class="container">
-    <h1>Latest Posts</h1>
-    <div class="row ">
-
-
-        <ul class="ul-custom ">
-
-            {% assign categorie = site.posts | where: 'categorie', "git" %}
-            {% for post in categorie %}
-
-            <div class="col postlist">
-                <li>
-                    <h2><a href="{{ post.url | relative_url }}" class="url-title">{{ post.title }}</a></h2>
-                    {{ post.content }} 
-                    {{ post.author }}
-                </li>
-            </div>
-            {% endfor %}
-        </ul>
-    </div>
-</div>
