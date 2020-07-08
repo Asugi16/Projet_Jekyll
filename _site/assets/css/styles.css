@@ -31,8 +31,8 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 
 .col.postlist { margin-bottom: 30px; }
 
-.url-title { color: white; }
+.url-title { color: #c0d2d6; font-family: serif; }
 
-.url-title:hover { color: white; }
+.url-title:hover { color: #02313f; }
 
 /*# sourceMappingURL=styles.css.map */
