@@ -4,7 +4,7 @@
 }
 
 .navbar-custom{
-background-color: grey;
+background-color: #353130;
 }
 
 
@@ -19,5 +19,15 @@ background-color: grey;
 }
 
 .dropdown-menu.show{
-    background-color: grey;
+    background-color:black;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu :hover {
+    background-color:  #353130;
+    color: white;
 }
