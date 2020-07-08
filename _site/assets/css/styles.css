@@ -1,5 +1,13 @@
 body { display: flex; flex-direction: column; min-height: 100vh; }
 
+.navbar-dark .navbar-nav .nav-link { color: white; margin-right: 20px; }
+
+.logoDWWM { margin-bottom: 10px; margin-right: 10px; margin-right: 20px; }
+
+.nav-link-mot { margin-top: 10px; }
+
+.dropdown-menu.show { background-color: grey; }
+
 #footer { background-color: black; flex: 0 0 50px; margin-top: auto; color: white; padding: 5px; }
 
 .thanks { text-align: center; margin-top: 15px; }
