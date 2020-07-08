@@ -8,8 +8,10 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 
 .dropdown-menu.show { background-color: grey; }
 
-#footer { background-color: black; flex: 0 0 50px; margin-top: auto; color: white; padding: 5px; }
+.footer-bg { background-color: #353130; margin-top: auto; color: white; padding-top: 5px; padding-bottom: 5px; }
 
 .thanks { text-align: center; margin-top: 15px; }
+
+.img-logo { margin: 3px; }
 
 /*# sourceMappingURL=styles.css.map */
