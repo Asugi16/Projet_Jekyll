@@ -3,17 +3,31 @@
 }
 
 .postlist{
-    border: solid black 2px;
-    border-radius: 5px;
+    border: solid #353130 2px;
+    border-radius: 15px;
     margin-bottom:5px;
-    background-color: grey ;
     width: 1000px ;
-    
+    background-image:linear-gradient(grey, rgb(61, 82, 88), white);
+    box-shadow:10px 20px 40px;
+    height: 150px;
+    width: 1000px;
 }
 
+.col.postlist{
+    margin-bottom: 30px;
+}
 .url-title{
     color: white;
+  
     &:hover{
         color: white;
     }
+}
+
+p{
+    color: white;
+}
+
+h1{
+    margin-right: 30px;
 }
