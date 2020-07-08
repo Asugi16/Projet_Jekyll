@@ -1,7 +1,12 @@
-.navbar-dark .navbar-nav .nav-link {
+.navbar-custom .navbar-nav .nav-link {
     color: white;
     margin-right: 20px;
 }
+
+.navbar-custom{
+background-color: #353130;
+}
+
 
 .logoDWWM{
     margin-bottom: 10px;
@@ -9,10 +14,20 @@
     margin-right: 20px;
 }
 
-.nav-link-mot {
+.nav-link-spacewords {
     margin-top:10px;
 }
 
 .dropdown-menu.show{
-    background-color: grey;
+    background-color:black;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu :hover {
+    background-color:  #353130;
+    color: white;
 }
