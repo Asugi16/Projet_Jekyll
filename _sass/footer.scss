@@ -1,4 +1,11 @@
-.footer-bg { 
-    background-color: red;
-    height: 50px;
+#footer {
+    background-color: black;
+    flex: 0 0 50px;
+    margin-top: auto;
+    color: white;
+    padding: 5px;
+}
+.thanks {
+    text-align: center;
+    margin-top: 15px;
 }
