@@ -10,9 +10,9 @@
 	"sourcesContent": [
 		"@import \"main\";\n@import \"navigation\";\n@import \"footer\";",
 		"",
-		"",
+		".navbar-dark .navbar-nav .nav-link {\n    color: white;\n    margin-right: 20px;\n}\n\n.logoDWWM{\n    margin-bottom: 10px;\n    margin-right: 10px;\n    margin-right: 20px;\n}\n\n.nav-link-mot {\n    margin-top:10px;\n}\n\n.dropdown-menu.show{\n    background-color: grey;\n}",
 		".footer-bg { \n    background-color: red;\n    height: 50px;\n}"
 	],
 	"names": [],
-	"mappings": "AGAA,AAAA,UAAU,CAAC,EACP,gBAAgB,EAAE,GAAG,EACrB,MAAM,EAAE,IAAI,GACf"
+	"mappings": "AEAA,AAAA,YAAY,CAAC,WAAW,CAAC,SAAS,CAAC,EAC/B,KAAK,EAAE,KAAK,EACZ,YAAY,EAAE,IAAI,GACrB;;AAED,AAAA,SAAS,CAAA,EACL,aAAa,EAAE,IAAI,EACnB,YAAY,EAAE,IAAI,EAClB,YAAY,EAAE,IAAI,GACrB;;AAED,AAAA,aAAa,CAAC,EACV,UAAU,EAAC,IAAI,GAClB;;AAED,AAAA,cAAc,AAAA,KAAK,CAAA,EACf,gBAAgB,EAAE,IAAI,GACzB;;ACjBD,AAAA,UAAU,CAAC,EACP,gBAAgB,EAAE,GAAG,EACrB,MAAM,EAAE,IAAI,GACf"
 }
