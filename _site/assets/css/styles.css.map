@@ -9,10 +9,10 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";\n@import \"navigation\";\n@import \"footer\";",
-		"body {\r\n    display: flex;\r\n    flex-direction: column;\r\n    min-height: 100vh;\r\n}",
-		".navbar-dark .navbar-nav .nav-link {\r\n    color: white;\r\n    margin-right: 20px;\r\n}\r\n\r\n.logoDWWM{\r\n    margin-bottom: 10px;\r\n    margin-right: 10px;\r\n    margin-right: 20px;\r\n}\r\n\r\n.nav-link-mot {\r\n    margin-top:10px;\r\n}\r\n\r\n.dropdown-menu.show{\r\n    background-color: grey;\r\n}",
-		"#footer {\r\n    background-color: black;\r\n    flex: 0 0 50px;\r\n    margin-top: auto;\r\n    color: white;\r\n    padding: 5px;\r\n}\r\n.thanks {\r\n    text-align: center;\r\n    margin-top: 15px;\r\n}"
+		"body {\n    display: flex;\n    flex-direction: column;\n    min-height: 100vh;\n}",
+		".navbar-custom .navbar-nav .nav-link {\n    color: white;\n    margin-right: 20px;\n}\n\n.navbar-custom{\nbackground-color: grey;\n}\n\n\n.logoDWWM{\n    margin-bottom: 10px;\n    margin-right: 10px;\n    margin-right: 20px;\n}\n\n.nav-link-spacewords {\n    margin-top:10px;\n}\n\n.dropdown-menu.show{\n    background-color: grey;\n}",
+		"#footer {\n    background-color: black;\n    flex: 0 0 50px;\n    margin-top: auto;\n    color: white;\n    padding: 5px;\n}\n.thanks {\n    text-align: center;\n    margin-top: 15px;\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,IAAI,CAAC,EACD,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,MAAM,EACtB,UAAU,EAAE,KAAK,GACpB;;ACJD,AAAA,YAAY,CAAC,WAAW,CAAC,SAAS,CAAC,EAC/B,KAAK,EAAE,KAAK,EACZ,YAAY,EAAE,IAAI,GACrB;;AAED,AAAA,SAAS,CAAA,EACL,aAAa,EAAE,IAAI,EACnB,YAAY,EAAE,IAAI,EAClB,YAAY,EAAE,IAAI,GACrB;;AAED,AAAA,aAAa,CAAC,EACV,UAAU,EAAC,IAAI,GAClB;;AAED,AAAA,cAAc,AAAA,KAAK,CAAA,EACf,gBAAgB,EAAE,IAAI,GACzB;;ACjBD,AAAA,OAAO,CAAC,EACJ,gBAAgB,EAAE,KAAK,EACvB,IAAI,EAAE,QAAQ,EACd,UAAU,EAAE,IAAI,EAChB,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,GAAG,GACf;;AACD,AAAA,OAAO,CAAC,EACJ,UAAU,EAAE,MAAM,EAClB,UAAU,EAAE,IAAI,GACnB"
+	"mappings": "ACAA,AAAA,IAAI,CAAC,EACD,OAAO,EAAE,IAAI,EACb,cAAc,EAAE,MAAM,EACtB,UAAU,EAAE,KAAK,GACpB;;ACJD,AAAA,cAAc,CAAC,WAAW,CAAC,SAAS,CAAC,EACjC,KAAK,EAAE,KAAK,EACZ,YAAY,EAAE,IAAI,GACrB;;AAED,AAAA,cAAc,CAAA,EACd,gBAAgB,EAAE,IAAI,GACrB;;AAGD,AAAA,SAAS,CAAA,EACL,aAAa,EAAE,IAAI,EACnB,YAAY,EAAE,IAAI,EAClB,YAAY,EAAE,IAAI,GACrB;;AAED,AAAA,oBAAoB,CAAC,EACjB,UAAU,EAAC,IAAI,GAClB;;AAED,AAAA,cAAc,AAAA,KAAK,CAAA,EACf,gBAAgB,EAAE,IAAI,GACzB;;ACtBD,AAAA,OAAO,CAAC,EACJ,gBAAgB,EAAE,KAAK,EACvB,IAAI,EAAE,QAAQ,EACd,UAAU,EAAE,IAAI,EAChB,KAAK,EAAE,KAAK,EACZ,OAAO,EAAE,GAAG,GACf;;AACD,AAAA,OAAO,CAAC,EACJ,UAAU,EAAE,MAAM,EAClB,UAAU,EAAE,IAAI,GACnB"
 }
