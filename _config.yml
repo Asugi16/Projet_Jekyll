@@ -1,6 +1,8 @@
 collections:
   authors:
     output: true
+  categories:
+    output: true
 
 defaults:
   - scope:
@@ -12,7 +14,12 @@ defaults:
       path: 
       type: "posts"
     values:
-      layout: "post"   
+      layout: "post"
+  - scope:
+      path:
+      type: "categories"
+    values:
+      layout: category
   - scope:
       path: 
     values:
