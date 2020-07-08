@@ -4,16 +4,16 @@ collections:
 
 defaults:
   - scope:
-      path: ""
+      path: 
       type: "authors"
     values:
       layout: "author"
   - scope:
-      path: ""
+      path: 
       type: "posts"
     values:
       layout: "post"   
   - scope:
-      path: ""
+      path: 
     values:
       layout: "default"
