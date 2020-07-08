@@ -1,0 +1,19 @@
+.ul-custom{
+    list-style-type: none;
+}
+
+.postlist{
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-bottom:5px;
+    background-color: grey ;
+    width: 1000px ;
+    
+}
+
+.url-title{
+    color: white;
+    &:hover{
+        color: white;
+    }
+}
