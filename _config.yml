@@ -1,7 +1,7 @@
 collections:
-  authors:
-    output: true
   categories:
+    output: true
+  categoriesCR:
     output: true
   codes:
     output: true  
@@ -22,6 +22,11 @@ defaults:
       type: "categories"
     values:
       layout: category
+  - scope:
+      path:
+      type: "categoriesCR"
+    values:
+      layout: categoryCR
   - scope:
       path: 
     values:

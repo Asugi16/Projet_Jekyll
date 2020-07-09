@@ -17,8 +17,8 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     
                     <!-- boucle qui prend dans data les articles -->
-                    {% for item in site.data.articles %}
-                        <a class="dropdown-item" href="{{item.link}}">{{item.name}}</a>
+                    {% for item in site.categories %}
+                        <a class="dropdown-item" href="{{item.url}}">{{item.category_key}}</a>
                     {% endfor %}
 
                 </div>
@@ -27,8 +27,8 @@
                 <a class="nav-link dropdown-toggle nav-link-spacewords" href="code_review.html" id="navbardropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Code Review</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <!-- boucle qui prend dans data les articles -->
-                      {% for item in site.data.codereview%}
-                      <a class="dropdown-item" href="{{item.link}}">{{item.name}}</a>
+                      {% for item in site.categoriesCR %}
+                      <a class="dropdown-item" href="{{item.url}}">{{item.category_key}}</a>
                       {% endfor %}
                 </div>
             </li>
