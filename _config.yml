@@ -3,6 +3,8 @@ collections:
     output: true
   categories:
     output: true
+  codes:
+    output: true  
 
 defaults:
   - scope:

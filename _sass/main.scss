@@ -1,13 +1,19 @@
+@font-face { 
+	font-family: 'Robotofont';
+    src: url('/assets/font/RobotoCondensed-Light-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'HelveticaNeuefont';
+    src: url('/assets/font/HelveticaNeue-Light.otf') format('opentype');
+}
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: serif;
 }
 .carousel-perso, h1 {
     text-align: center;
     margin-top: 50px;
-
 }
 .carousel-img-perso {
     align-content: center;
@@ -24,6 +30,15 @@ body {
     width: 50px;
 }
 .carousel-img-perso {
-    max-width: 200px;
+    max-width: 300px;
     max-height: 200px;
+}
+
+h1, h2, h3 {
+    font-family: 'Robotofont';
+}
+
+p{
+    font-family: 'HelveticaNeuefont';
+    letter-spacing: 0.1em;
 }
