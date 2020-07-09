@@ -35,9 +35,9 @@ p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; }
 /* Change color of dropdown links on hover */
 .dropdown-menu :hover { background-color: #353130; color: white; }
 
-.custom-toggler { background-color: white; }
+.navbar-toggler-icon { background-image: url(/assets/images/menu-icon.png); width: 70px; height: 70px; }
 
-.navbar-toggler-icon { color: yellow; }
+.navbar-toggler-custom-toggler { width: 20px; }
 
 .footer-bg { background-color: #353130; margin-top: auto; color: white; padding-top: 5px; padding-bottom: 5px; }
 

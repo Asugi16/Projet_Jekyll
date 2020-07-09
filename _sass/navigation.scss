@@ -26,10 +26,11 @@ background-color: #353130;
     color: white;
 }
 
-.custom-toggler{
-    background-color: white;
-
-}
 .navbar-toggler-icon{
-    color: yellow;
+    background-image: url(/assets/images/menu-icon.png);
+    width: 70px;
+    height: 70px;
+}
+.navbar-toggler-custom-toggler{
+    width: 20px;
 }
