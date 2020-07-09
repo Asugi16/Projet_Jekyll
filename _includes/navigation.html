@@ -3,33 +3,27 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse justify-content-between" id="collapsingNavbar">
-
         <ul class="navbar-nav">
-
             <li class="nav-item active">
-                
                 <a class="nav-link" href="/">
-                        <img class="logoDWWM"src="/assets/images/DWWM.png" width="90" >
-                    </a>
+                    <img class="logoDWWM" src="/assets/images/DWWM.png" width="90">
+                </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link-spacewords" href="articles.html" id="navbardropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Articles</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    
+
                     <!-- boucle qui prend dans data les articles -->
                     {% for item in site.categories %}
-                        <a class="dropdown-item" href="{{item.url}}">{{item.category_key}}</a>
-                    {% endfor %}
-
+                    <a class="dropdown-item" href="{{item.url}}">{{item.category_key}}</a> {% endfor %}
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link-spacewords" href="code_review.html" id="navbardropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Revue de Code</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <!-- boucle qui prend dans data les articles -->
-                      {% for item in site.categoriesCR %}
-                      <a class="dropdown-item" href="{{item.url}}">{{item.category_key}}</a>
-                      {% endfor %}
+                    <!-- boucle qui prend dans data les articles -->
+                    {% for item in site.categoriesCR %}
+                    <a class="dropdown-item" href="{{item.url}}">{{item.category_key}}</a> {% endfor %}
                 </div>
             </li>
             <li class="nav-item">
@@ -42,7 +36,7 @@
         <form class="form-inline">
             <a class="nav-link" href="#"></a>
             <img src="/assets/images/loupe.png" width="50" height="50" alt="loupe logo">
-          </form>
-        
+        </form>
+
     </div>
 </nav>
