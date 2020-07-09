@@ -7,7 +7,7 @@
 
     <p class="row ">
         <div class="col">
-        <img class=" w-25 " src="{{ page.image }}" alt="{{ page.title }}"> <br/>{{ page.date | date_to_string }} {% assign author = site.authors | where: 'short_name', page.author | first %} {% if author %} - <a href="{{ author.url }}">{{ author.name }}</a> {% endif %}
+        <img class=" /" src="{{ page.image }}" alt="{{ page.title }}"> <br/>{{ page.date | date_to_string }} {% assign author = site.authors | where: 'short_name', page.author | first %} {% if author %} - <a href="{{ author.url }}">{{ author.name }}</a> {% endif %}
         
         </div>
     </p>
