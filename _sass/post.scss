@@ -1,7 +1,6 @@
 .ul-custom{
     list-style-type: none;
 }
-
 .postlist{
     border: solid #353130 2px;
     border-radius: 15px;
@@ -11,25 +10,19 @@
     box-shadow:10px 20px 40px;
     height: 150px;
     width: 1000px;
-
     p{
         color: white;
     }
-    
     h1{
         margin-right: 30px;
     }
 }
-
 .col.postlist{
     margin-bottom: 30px;
 }
 .url-title{
     color:rgb(192, 210, 214);
     font-family: serif;
-    
-    
-  
     &:hover{
         color: rgb(2, 49, 63);
     }
