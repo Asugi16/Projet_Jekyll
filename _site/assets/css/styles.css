@@ -1,4 +1,8 @@
-body { display: flex; flex-direction: column; min-height: 100vh; font-family: serif; }
+@font-face { font-family: 'Robotofont'; src: url("/assets/font/RobotoCondensed-Light-webfont.woff") format("woff"); }
+
+@font-face { font-family: 'HelveticaNeuefont'; src: url("/assets/font/HelveticaNeue-Light.otf") format("opentype"); }
+
+body { display: flex; flex-direction: column; min-height: 100vh; }
 
 .carousel-perso, h1 { text-align: center; margin-top: 50px; }
 
@@ -8,7 +12,11 @@ body { display: flex; flex-direction: column; min-height: 100vh; font-family: se
 
 .carousel-control-next-icon { background-image: url(/assets/images/right-arrow.png); height: 50px; width: 50px; }
 
-.carousel-img-perso { max-width: 200px; max-height: 200px; }
+.carousel-img-perso { max-width: 300px; max-height: 200px; }
+
+h1, h2, h3 { font-family: 'Robotofont'; }
+
+p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; }
 
 .navbar-custom .navbar-nav .nav-link { color: white; margin-right: 20px; }
 
@@ -24,6 +32,10 @@ body { display: flex; flex-direction: column; min-height: 100vh; font-family: se
 
 /* Change color of dropdown links on hover */
 .dropdown-menu :hover { background-color: #353130; color: white; }
+
+.custom-toggler { background-color: white; }
+
+.navbar-toggler-icon { color: yellow; }
 
 .footer-bg { background-color: #353130; margin-top: auto; color: white; padding-top: 5px; padding-bottom: 5px; }
 
@@ -41,7 +53,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; font-family: se
 
 .col.postlist { margin-bottom: 30px; }
 
-.url-title { color: #c0d2d6; font-family: serif; }
+.url-title { color: #c0d2d6; }
 
 .url-title:hover { color: #02313f; }
 
