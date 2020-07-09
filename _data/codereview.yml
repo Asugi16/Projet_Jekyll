@@ -1,14 +1,55 @@
-- name: Html
-  link: /htmlCR.html
-- name: Css
-  link: /cssCR.html
-- name: Sass 
-  link: /sassCR.html
-- name: Jekyll
-  link: /jekyllCR.html
-- name: Git
-  link: /gitCR.html
-- name : Gitpage
-  link : /gitpageCR.html
-- name : Bootstrap
-  link : /bootstrapCR.html
+- name: Malik
+  html: 
+    - exercice1
+    - exercice2
+    - exercice3   
+  css:
+    - exercice1
+    - exercice2
+    - exercice3 
+  bootstrap: 
+    - exercice1
+    - exercice2
+    - exercice3
+
+- name: Ludivine
+  html: 
+    - exercice1
+    - exercice2
+    - exercice3   
+  css:
+    - exercice1
+    - exercice2
+    - exercice3 
+  bootstrap: 
+    - exercice1
+    - exercice2
+    - exercice3
+
+- name: Julien
+  html: 
+    - exercice1
+    - exercice2
+    - exercice3   
+  css:
+    - exercice1
+    - exercice2
+    - exercice3 
+  bootstrap: 
+    - exercice1
+    - exercice2
+    - exercice3
+
+- name: Manon
+  html: 
+    - exercice1
+    - exercice2
+    - exercice3   
+  css:
+    - exercice1
+    - exercice2
+    - exercice3 
+  bootstrap: 
+    - exercice1
+    - exercice2
+    - exercice3        
