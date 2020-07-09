@@ -13,13 +13,13 @@ layout: default
         <ul class="ul-custom ">
 
             {% assign categorie = site.codes | where: 'categorie', page.category_key %}
-            {% for codes in categorie %}
+            {% for code in categorie %}
 
             <div class="col postlist">
                 <li>
-                    <h2><a href="{{ post.url | relative_url }}" class="url-title">{{ post.title }}</a></h2>
-                    {{ post.content }} 
-                    {{ post.author }}
+                    <h2><a href="{{ code.url | relative_url }}" class="url-title">{{ code.title }}</a></h2>
+                    {{ code.content }} 
+                    
                 </li>
             </div>
             {% endfor %}
