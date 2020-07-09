@@ -8,7 +8,6 @@
   link: /Jekyll.html
 - name : Git
   link : /git.html
-- name : Gitpage
-  link : /gitpage.html
+
 - name : Bootstrap
   link : /Bootstrap.html
