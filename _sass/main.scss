@@ -2,9 +2,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: serif;
 }
 .carousel-perso, h1 {
     text-align: center;
+    margin-top: 50px;
 
 }
 .carousel-img-perso {
@@ -20,4 +22,8 @@ body {
     background-image: url(/assets/images/right-arrow.png);
     height: 50px;
     width: 50px;
+}
+.carousel-img-perso {
+    max-width: 200px;
+    max-height: 200px;
 }
