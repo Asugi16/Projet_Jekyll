@@ -12,8 +12,8 @@ layout: default
 
         <ul class="ul-custom ">
 
-            {% assign categorie = site.posts | where: 'categorie', page.category_key %}
-            {% for post in categorie %}
+            {% assign categorie = site.codes | where: 'categorie', page.category_key %}
+            {% for codes in categorie %}
 
             <div class="col postlist">
                 <li>
