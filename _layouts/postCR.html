@@ -7,12 +7,10 @@ layout: default
 
     <p class="row ">
     <div class="col">
-        <img class=" w-25 " src="{{ page.image }}" alt="{{ page.title }}"> <br />{{ page.date | date_to_string }}
+        <img class=" w-50 " src="{{ page.codeimg }}" alt="{{ page.title }}"> <br />{{ page.date | date_to_string }}
         
     </div>
     </p>
-
-    <img src= "{{ page.codeimg }}">
     {{ content }}
     {{ page.author }}
 </div>
