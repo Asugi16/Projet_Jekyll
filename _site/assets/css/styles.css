@@ -18,6 +18,8 @@ h1, h2, h3 { font-family: 'Robotofont'; }
 
 p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; }
 
+.text-left { margin-bottom: 80px; margin-top: 30px; }
+
 .navbar-custom .navbar-nav .nav-link { color: white; margin-right: 20px; }
 
 .navbar-custom { background-color: #353130; }
