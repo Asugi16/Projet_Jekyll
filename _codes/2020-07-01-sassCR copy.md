@@ -1,6 +1,6 @@
 ---
 layout: postCR
-author: Malik
+author: ludivine
 title: "sass code review"
 categorie: sass
 codeimg: Capturedata.PNG

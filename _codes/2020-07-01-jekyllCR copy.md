@@ -1,6 +1,6 @@
 ---
 layout: postCR
-author: Manon
+author: julien
 title: "jekyll code review"
 categorie: jekyll 
 codeimg: Capturedata.PNG
