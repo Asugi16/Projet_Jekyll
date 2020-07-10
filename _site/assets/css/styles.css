@@ -16,7 +16,7 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 
 h1, h2, h3 { font-family: 'Robotofont'; }
 
-p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; }
+p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; margin-bottom: 2px; }
 
 .text-left { margin-bottom: 80px; margin-top: 30px; }
 
@@ -58,5 +58,3 @@ p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; }
 .url-title { color: #c0d2d6; }
 
 .url-title:hover { color: #02313f; }
-
-/*# sourceMappingURL=styles.css.map */

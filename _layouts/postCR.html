@@ -7,11 +7,12 @@ layout: default
 
     <p class="row ">
     <div class="col">
-        <img class=" w-50 " src="{{ page.codeimg }}" alt="{{ page.title }}"> <br />{{ page.date | date_to_string }}
+        <img class=" w-50 " src="{{ page.codeimg }}" alt="{{ page.title }}"> <br />
+        <a href="https://github.com/Asugi16/Projet_Jekyll.git"> GitHub repository </a>
         
     </div>
     </p>
     {{ content }}
-    <p>code réaliser par: {{ page.author }}
-    code revu par : {{ page.author-review }}</p>
+    <p>code réaliser par: {{ page.author }}</p>
+    <p>code revu par : {{ page.author-review }}</p>
 </div>
