@@ -7,22 +7,22 @@ layout: default
     {{ content }}
 
     <h1>Dernier article</h1>
-    <div class="row ">
+    <div class="row">
 
 
-        <ul class="ul-custom ">
+        <!-- <ul class="ul-custom "> -->
 
             {% assign categorie = site.posts | where: 'categorie', page.category_key %}
             {% for post in categorie %}
 
-            <div class="col postlist">
-                <li>
+            <div class="col-12 postlist alternative">
+                <!-- <li> -->
                     <h2><a href="{{ post.url | relative_url }}" class="url-title">{{ post.title }}</a></h2>
                     {{ post.content }} 
                     {{ post.author }}
-                </li>
+                <!-- </li> -->
             </div>
             {% endfor %}
-        </ul>
+        <!-- </ul> -->
     </div>
 </div>
