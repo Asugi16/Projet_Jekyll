@@ -7,7 +7,8 @@ layout: default
 
     <p class="row ">
     <div class="col">
-        <img class=" w-50 " src="{{ page.codeimg }}" alt="{{ page.title }}"> <br />
+        {% assign url = '/assets/images/' | append: page.codeimg | relative_url %}
+       <a href="{{ url }}" target="_blank"><img class=" w-50 " src="{{ url }}" alt="{{ page.title }}"></a> <br />
         <a href="https://github.com/Asugi16/Projet_Jekyll.git"> GitHub repository </a>
         
     </div>

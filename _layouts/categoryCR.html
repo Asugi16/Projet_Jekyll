@@ -9,21 +9,17 @@ layout: default
 
     <h1>Dernière revue de code</h1>
     <div class="row ">
+        {% assign categorie = site.codes | where: 'categorie', page.category_key %}
+        {% for code in categorie %}
 
+        <div class="col-12 postlist alternative">
 
-        <ul class="ul-custom ">
-
-            {% assign categorie = site.codes | where: 'categorie', page.category_key %}
-            {% for code in categorie %}
-
-            <div class="col postlist">
-                <li>
-                    <h2><a href="{{ code.url | relative_url }}" class="url-title">{{ code.title }}</a></h2>
-                    {{ code.content }} 
-                    
-                </li>
+            <h2><a href="{{ code.url | relative_url }}" class="url-title">{{ code.title }}</a></h2>
+            <div class="contentsCR">
+                {{ code.content }} <br/><br/>
+                codé par: {{ code.author }}
             </div>
-            {% endfor %}
-        </ul>
+        </div>
+        {% endfor %}
     </div>
 </div>

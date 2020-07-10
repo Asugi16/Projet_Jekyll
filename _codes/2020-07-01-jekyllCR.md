@@ -3,8 +3,8 @@ layout: postCR
 author: Manon
 title: "jekyll code review"
 categorie: jekyll 
-codeimg: /assets/images/Capturedata.PNG
+codeimg: Capturedata.PNG
 author-review: manon
 ---
 
-<h1> code review jekyll<h1>
+code review jekyll
