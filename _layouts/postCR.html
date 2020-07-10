@@ -7,10 +7,18 @@ layout: default
 
     <p class="row ">
     <div class="col">
-        {% assign url = '/assets/images/' | append: page.codeimg | relative_url %}
-       <a href="{{ url }}" target="_blank"><img class=" w-50 " src="{{ url }}" alt="{{ page.title }}"></a> <br />
-        <a href="https://github.com/Asugi16/Projet_Jekyll.git"> GitHub repository </a>
         
+        {% if page.codeimg == null %}
+            {% assign urldefault = '/assets/images/' | append: page.categorie | append: '-icon.png' | relative_url %}
+            <a href="{{ urldefault }}" target="_blank"><img class=" w-50 " src="{{ urldefault }}" alt="{{ page.title }}"></a>
+        {% else %}
+            {% assign url = '/assets/images/' | append: page.codeimg | relative_url %}
+            <a href="{{ url }}" target="_blank"><img class=" w-50 " src="{{ url }}" alt="{{ page.title }}"></a>
+        {% endif %}
+  
+        <br />
+        <a href="https://github.com/Asugi16/Projet_Jekyll.git"> GitHub repository </a>
+ 
     </div>
     </p>
     {{ content }}

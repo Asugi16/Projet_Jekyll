@@ -27,7 +27,11 @@ defaults:
       type: "categoriesCR"
     values:
       layout: categoryCR
-      codeimg: "/assets/images/default.png"
+  - scope:
+      path:
+      type: "codes"
+    values:
+      layout: postCR
   - scope:
       path: 
     values:
