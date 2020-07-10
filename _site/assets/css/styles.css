@@ -49,16 +49,26 @@ p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; margin-bottom: 2px;
 
 .ul-custom { list-style-type: none; }
 
-.postlist { display: flex; border: solid #353130 2px; border-radius: 15px; margin-bottom: 5px; width: 1000px; background-image: linear-gradient(grey, #3d5258, white); box-shadow: 10px 20px 40px; height: 150px; width: 1000px; }
+.postlist { border: solid #353130 2px; border-radius: 15px; margin-bottom: 5px; width: 1000px; background-image: linear-gradient(#3d5258, white); box-shadow: 10px 20px 40px; height: 150px; width: 1000px; margin: 0 auto; }
 
 .postlist p { color: white; }
 
 .postlist h1 { margin-right: 30px; }
+
+.postlist.alternative { border: none; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15); padding: 16px; background: white; color: black; margin-bottom: 1em; overflow: hidden; }
+
+.postlist.alternative::before { content: ""; position: absolute; width: 100%; height: 56px; display: block; background: #3d5258; margin: -16px; background-image: linear-gradient(90deg, #3d5258, #61777d); }
+
+.postlist.alternative h2 { position: relative; }
+
+.postlist.alternative p { color: #333; }
 
 .col.postlist { margin-bottom: 30px; }
 
 .url-title { color: #c0d2d6; }
 
 .url-title:hover { color: #02313f; }
+
+.blabla { display: flex; margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */
