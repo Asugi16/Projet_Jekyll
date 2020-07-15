@@ -14,5 +14,8 @@
         </div>
     </p>
 {{ content }}
-{{ page.author }}
+{{ page.author }}<br/>
+{% for tag in page.tags %}
+{{ tag }}
+{% endfor %}
 </div>
