@@ -18,6 +18,12 @@ layout: default
             <div class="contentsCR">
                 {{ code.content }} <br/><br/>
                 codé par: {{ code.author }}
+                <br/>
+                {% for tag in code.tags %}
+                <a href="search.html?search={{ tag }}">
+                 {{ tag }}
+                </a>
+                {% endfor %}
             </div>
         </div>
         {% endfor %}
