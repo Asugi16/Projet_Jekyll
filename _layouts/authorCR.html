@@ -15,6 +15,12 @@ layout: default
             {{ author.content }}
         </div>
         {% endfor %}
-        </ul>
+        {% assign author = site.posts | where: 'author', page.category_key %}
+        {% for author in author %}
+        <div class="col-12 postlist alternative">
+            <h2><a href="{{ author.url | relative_url }}" class="url-title">{{ author.title }}</a></h2>
+            {{ author.content }}
+        </div>
+        {% endfor %}
     </div>
 </div>
