@@ -20,6 +20,13 @@ layout: default
                     <h2><a href="{{ post.url | relative_url }}" class="url-title">{{ post.title }}</a></h2>
                     {{ post.content }} 
                     {{ post.author }}
+                    <br/>
+                    {% for tag in post.tags %}
+                    <a href="/search.html?search={{ tag }}">
+                     {{ tag }}
+                    </a>
+                    {% endfor %}
+
                 <!-- </li> -->
             </div>
             {% endfor %}

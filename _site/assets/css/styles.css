@@ -41,6 +41,10 @@ p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; margin-bottom: 2px;
 
 .btn-outline-success { width: 50px; height: 50px; }
 
+.btn-outline-success { background-color: #353130; border-color: #353130; }
+
+.btn-outline-success:hover { background-color: #9bacac; border-color: #353130; }
+
 .footer-bg { background-color: #353130; margin-top: auto; color: white; padding-top: 5px; padding-bottom: 5px; }
 
 .thanks { text-align: center; margin-top: 15px; }
