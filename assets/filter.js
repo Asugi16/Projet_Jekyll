@@ -29,4 +29,6 @@ fetch('/search.json')
 
         // Le reste du code va ici
         // ...
+
+        
     })
