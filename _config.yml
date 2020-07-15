@@ -5,6 +5,8 @@ collections:
     output: true
   codes:
     output: true  
+  authors:
+    output: true
 
 defaults:
   - scope:
