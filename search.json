@@ -1,0 +1,62 @@
+---
+layout: null
+---
+{
+    "tags": [
+        {
+            "taghtml": "html",
+            "tagcss": "css",
+            "tagsass": "sass",
+            "tagjekyll": "jekyll",
+            "taggit": "git",
+            "tagbootstrap": "bootstrap"
+        }
+    ],
+    "categories": [
+        {%- assign last_index = site.categories.size | minus: 1 -%}
+        {%- for category in site.categories -%}
+            {
+                "title": "{{ category.title }}",
+                "url": "{{ category.url }}",
+                "key": "{{ category.category_key }}"
+            }
+            {%- if category.url != site.categories[last_index].url -%}
+            ,
+            {%- endif -%}
+        {%- endfor -%}
+    ],
+
+    "posts": [
+        {%- assign last_index = site.posts.size | minus: 1 -%}
+        {%- for post in site.posts -%}
+            {
+                "title": "{{ post.title }}",
+                "image": "{{ post.image }}",
+                "content": "{{ post.content | strip_html | strip_newlines | truncatewords: 10 }}",
+                "author": "{{ post.author }}",
+                "url": "{{ post.url }}",
+                "tag":  "{{ post.tags }}"
+            }
+            {%- if post.url != site.posts[last_index].url -%}
+            ,
+            {%- endif -%}
+        {%- endfor -%}
+    ],
+    "codes": [
+        {%- assign last_index = site.codes.size | minus: 1 -%}
+        {%- for code in site.codes -%}
+        {% assign urldefault = '/assets/images/' | append: code.categorie | append: '-icon.png' | relative_url %}
+            {
+                "title": "{{ code.title }}",
+                "image": "{{ urldefault }}",
+                "content": "{{ code.content | strip_html | strip_newlines | truncatewords: 10 }}",
+                "author": "{{ code.author }}",
+                "url": "{{ code.url }}",
+                "tag":  "{{ code.tags }}"
+            }
+            {%- if code.url != site.codes[last_index].url -%}
+            ,
+            {%- endif -%}
+        {%- endfor -%}
+    ]
+}
