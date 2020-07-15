@@ -35,7 +35,8 @@ layout: null
                 "content": "{{ post.content | strip_html | strip_newlines | truncatewords: 10 }}",
                 "author": "{{ post.author }}",
                 "url": "{{ post.url }}",
-                "tag":  "{{ post.tags }}"
+                "tag":  "{{ post.tags }}",
+                "category": "{{ post.categorie }}"
             }
             {%- if post.url != site.posts[last_index].url -%}
             ,
@@ -52,7 +53,8 @@ layout: null
                 "content": "{{ code.content | strip_html | strip_newlines | truncatewords: 10 }}",
                 "author": "{{ code.author }}",
                 "url": "{{ code.url }}",
-                "tag":  "{{ code.tags }}"
+                "tag":  "{{ code.tags | join: ',' }}",
+                "category": "{{ code.categorie }}"
             }
             {%- if code.url != site.codes[last_index].url -%}
             ,
