@@ -33,18 +33,21 @@ function generateHtml(filtered){
             <br/>
         ${ datum.content }
         <br/>
+        <div class="row">
+        <div class="col-6 author p-1 ">
         ${ datum.author }
-        <br/>
+    </div>
         `;
         // const cpt = "if(cpt == ${ tag }) {active};";
+      
         for(let tag of datum.tags.split(',')){
-            html += `
-                    <a class="${ tag == search ? "active" : "" }" href="/tag.html?tag=${ tag }">
+            html += `  <div class="col-6 tag">
+                    <a class=" ${ tag == search ? "active" : "" }" href="/tag.html?tag=${ tag }">
                         ${ tag }
                     </a>
-                    `;
+                    </div>
+                   </div> `;
         }
-
         html += "</div>";
     }
 

@@ -18,15 +18,19 @@ layout: default
             <div class="col-12 postlist alternative">
                 <!-- <li> -->
                     <h2><a href="{{ post.url | relative_url }}" class="url-title">{{ post.title }}</a></h2>
-                    <p>{{ post.content | truncatewords:30 }}</p>
+                    <p>{{ post.content | truncatewords:30 }}</p></br>
+                    <div class="row">
+                        <div class="col author p-1 ">
                     {{ post.author }}
-                    <br/>
+                </div>
+                <div class="col tag">
                     {% for tag in post.tags %}
                     <a href="/tag.html?tag={{ tag }}">
                      {{ tag }}
                     </a>
                     {% endfor %}
-
+                </div>
+                </div>
                 <!-- </li> -->
             </div>
             {% endfor %}

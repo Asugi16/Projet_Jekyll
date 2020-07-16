@@ -26,6 +26,10 @@ a { color: #1babff; }
 
 a:hover { color: #ff607b; text-decoration: none; }
 
+.author { text-align: left; }
+
+.tag { text-align: right; }
+
 .navbar-custom .navbar-nav .nav-link { color: white; margin-right: 20px; }
 
 .navbar-custom { background-color: #353130; }
