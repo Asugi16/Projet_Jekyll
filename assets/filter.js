@@ -29,4 +29,32 @@ fetch('/search.json')
 
         // Le reste du code va ici
         // ...
+
+        const $content = document.getElementById("dynamic-content");
+        $content.innerHTML = generateHtml();
+
+        function generateHtml(){
+
+            let html="";
+            for(let datum of filtered){
+                html +=`
+                <div class="col-12 postlist alternative text-center">
+                <h1>${ datum.title }</h1>
+                
+                
+                    <p class="row ">
+                        <div class="col">
+                         <img class=" w-25 " src="${ datum.image }" alt="${ datum.title }"> <br/>
+                        </div>
+                    </p>
+                ${ datum.content }
+                ${ datum.author }
+                <br/>
+                
+                
+                `
+            }
+
+            return html;
+        }
     })
