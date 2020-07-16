@@ -26,6 +26,8 @@ a { color: #1babff; }
 
 a:hover { color: #ff607b; text-decoration: none; }
 
+.col-12-postlist-alternative { margin-top: 15px; }
+
 .navbar-custom .navbar-nav .nav-link { color: white; margin-right: 20px; }
 
 .navbar-custom { background-color: #353130; }
@@ -51,11 +53,15 @@ a:hover { color: #ff607b; text-decoration: none; }
 
 .btn-outline-success:hover { background-color: #9bacac; border-color: #353130; }
 
+.navbar { margin-bottom: 15px; }
+
 .footer-bg { background-color: #353130; margin-top: auto; color: white; padding-top: 5px; padding-bottom: 5px; }
 
 .thanks { text-align: center; margin-top: 15px; }
 
 .img-logo { margin: 3px; }
+
+.btn-secondary { background-color: #e6ddda; color: black; }
 
 .ul-custom { list-style-type: none; }
 
