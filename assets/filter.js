@@ -39,20 +39,64 @@ fetch('/search.json')
             for(let datum of filtered){
                 html +=`
                 <div class="col-12 postlist alternative text-center">
-                <a href="{{ post.url | relative_url }}"><h1>${ datum.title }</h1></a>
+                <a href="${ datum.url }" class="url-title"><h2>${ datum.title }</h2></a>
                 
                 
                     <p class="row ">
                         <div class="col">
-                         <img class=" w-25 " src="${ datum.image }" alt="${ datum.title }"> <br/>
+                         <img class=" w-25 " src="${ datum.image }" alt="${ datum.title }"> 
                         </div>
                     </p>
+                    <br/>
                 ${ datum.content }
+                <br/>
                 ${ datum.author }
                 <br/>
+                    ${
+                        datum.tags.split(',').map(function(tag){
+                            return `
+                            <a href="/tag.html?tag=${ tag }">
+                                ${ tag }
+                            </a>
+                            `;
+                        }).join('')
+                    }
                 </div>
                 
                 `
+            }
+
+            return html;
+        }function generateHtml(){
+
+            let html="";
+            for(let datum of filtered){
+                html +=`
+                <div class="col-12 postlist alternative text-center">
+                <a href="${ datum.url }" class="url-title"><h2>${ datum.title }</h2></a>
+                
+                
+                    <p class="row ">
+                        <div class="col">
+                         <img class=" w-25 " src="${ datum.image }" alt="${ datum.title }"> 
+                        </div>
+                    </p>
+                    <br/>
+                ${ datum.content }
+                <br/>
+                ${ datum.author }
+                <br/>
+                `;
+
+                for(let tag of datum.tags.split(',')){
+                    html += `
+                            <a href="/tag.html?tag=${ tag }">
+                                ${ tag }
+                            </a>
+                            `;
+                }
+
+                html += "</div>";
             }
 
             return html;
