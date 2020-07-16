@@ -1,5 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 let search;
+const cpt = "if(cpt == 0) {active}";
 
 function isRelevant(elt){
     return hasCategory(elt) || hasTags(elt) || hasTitle(elt) || hasAuthor(elt);
@@ -36,10 +37,10 @@ function generateHtml(filtered){
         ${ datum.author }
         <br/>
         `;
-
+        
         for(let tag of datum.tags.split(',')){
             html += `
-                    <a href="/tag.html?tag=${ tag }">
+                    <a class="cpt" href="/tag.html?tag=${ tag }">
                         ${ tag }
                     </a>
                     `;
