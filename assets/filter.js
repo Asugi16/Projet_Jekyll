@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 let search;
-const cpt = "if(cpt == 0) {active}";
+
 
 function isRelevant(elt){
     return hasCategory(elt) || hasTags(elt) || hasTitle(elt) || hasAuthor(elt);
@@ -22,12 +22,12 @@ function generateHtml(filtered){
     let html="";
     for(let datum of filtered){
         html +=`
-        <div class="col-12 postlist alternative text-center">
+        <div class="col-12 postlist alternative">
         <a href="${ datum.url }" class="url-title"><h2>${ datum.title }</h2></a>
         
         
             <p class="row ">
-                <div class="col">
+                <div class="col text-center">
                  <img class=" w-25 " src="${ datum.image }" alt="${ datum.title }"> 
                 </div>
             </p>
@@ -37,7 +37,7 @@ function generateHtml(filtered){
         ${ datum.author }
         <br/>
         `;
-        
+        let cpt = "if(cpt == ${ tag }) {active}";
         for(let tag of datum.tags.split(',')){
             html += `
                     <a class="cpt" href="/tag.html?tag=${ tag }">
