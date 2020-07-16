@@ -22,9 +22,9 @@ p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; margin-bottom: 2px;
 
 .active { color: pink; }
 
-a { color: black; }
+a { color: #1babff; }
 
-a:hover { color: #fa7087; text-decoration: none; }
+a:hover { color: #ff607b; text-decoration: none; }
 
 .navbar-custom .navbar-nav .nav-link { color: white; margin-right: 20px; }
 

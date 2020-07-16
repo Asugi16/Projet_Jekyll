@@ -16,7 +16,7 @@ layout: default
 
             <h2><a href="{{ code.url | relative_url }}" class="url-title">{{ code.title }}</a></h2>
             <div class="contentsCR">
-                {{ code.content }} <br/><br/>
+                {{ code.content | truncatewords: 30 }} <br/><br/>
                 codé par: {{ code.author }}
                 <br/>
                 {% for tag in code.tags %}
