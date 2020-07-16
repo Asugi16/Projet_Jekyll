@@ -39,7 +39,7 @@ fetch('/search.json')
             for(let datum of filtered){
                 html +=`
                 <div class="col-12 postlist alternative text-center">
-                <h1>${ datum.title }</h1>
+                <a href="{{ post.url | relative_url }}"><h1>${ datum.title }</h1></a>
                 
                 
                     <p class="row ">
@@ -50,7 +50,7 @@ fetch('/search.json')
                 ${ datum.content }
                 ${ datum.author }
                 <br/>
-                
+                </div>
                 
                 `
             }
