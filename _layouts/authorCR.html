@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: default
 ---
 
 <div class="container">
@@ -8,21 +8,19 @@ layout: default
 
     <h1>Tous les codes </h1>
     <div class="row ">
-
-
-        <ul class="ul-custom ">
-
-            {% assign authorCR = site.codes | where: 'author', page.category_key %}
-            {% for author in authorCR %}
-
-            <div class="col postlist">
-                <li>
-                    <h2><a href="{{ author.url | relative_url }}" class="url-title">{{ author.title }}</a></h2>
-                    {{ author.content }} 
-                    
-                </li>
-            </div>
-            {% endfor %}
-        </ul>
+        {% assign authorCR = site.codes | where: 'author', page.category_key %}
+        {% for author in authorCR %}
+        <div class="col-12 postlist alternative">
+            <h2><a href="{{ author.url | relative_url }}" class="url-title">{{ author.title }}</a></h2>
+            {{ author.content }}
+        </div>
+        {% endfor %}
+        {% assign author = site.posts | where: 'author', page.category_key %}
+        {% for author in author %}
+        <div class="col-12 postlist alternative">
+            <h2><a href="{{ author.url | relative_url }}" class="url-title">{{ author.title }}</a></h2>
+            {{ author.content }}
+        </div>
+        {% endfor %}
     </div>
 </div>

@@ -1,6 +1,8 @@
 collections:
   codes:
     output: true  
+  authors:
+    output: true
 
 defaults:
   - scope:

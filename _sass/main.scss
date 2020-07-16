@@ -48,3 +48,14 @@ p{
     margin-bottom: 80px;
     margin-top: 30px;
 }
+.active {
+    color: pink;
+}
+a{
+    color:rgb(27, 171, 255);
+    &:hover {
+        color: rgb(255, 96, 123);
+        text-decoration: none;
+    
+    }
+}

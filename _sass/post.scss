@@ -9,7 +9,7 @@
     width: 1000px ;
     background-image:linear-gradient(rgb(61, 82, 88), white);
     box-shadow:10px 20px 40px;
-    height: 150px;
+    min-height: 150px;
     width: 1000px;
     margin:0 auto;
     p{
@@ -36,7 +36,7 @@
         display: block;
         background: #3d5258;
         margin: -16px;
-        background-image: linear-gradient(90deg, #3d5258, #61777d);
+        background-image: linear-gradient(90deg, #121213, #bd2130);
     }
 
     h2{
