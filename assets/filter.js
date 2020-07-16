@@ -42,10 +42,10 @@ function generateHtml(filtered){
     </div>
     <div class="tag raw">  `;
     
-    
+
         for(let tag of datum.tags.split(',')){
             html += `  
-                    <a class=" p-1 ${ tag == search ? "active" : "" }" href="/tag.html?tag=${ tag }">
+                    <a class=" p-1 ${ tag == search ? "nav-active" : "" }" href="/tag.html?tag=${ tag }">
                         ${ tag }
                     </a>
                     
