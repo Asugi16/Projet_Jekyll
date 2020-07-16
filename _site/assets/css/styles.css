@@ -14,6 +14,8 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 
 .carousel-img-perso { max-width: 300px; max-height: 200px; }
 
+.active--carousel { color: black; }
+
 h1, h2, h3 { font-family: 'Robotofont'; }
 
 p { font-family: 'HelveticaNeuefont'; letter-spacing: 0.1em; margin-bottom: 2px; }
@@ -85,6 +87,6 @@ a:hover { color: #ff607b; text-decoration: none; }
 
 .url-title { color: #c0d2d6; }
 
-.url-title:hover { color: #02313f; }
+.url-title:hover { color: white; }
 
 /*# sourceMappingURL=styles.css.map */

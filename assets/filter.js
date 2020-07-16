@@ -19,9 +19,12 @@ function hasAuthor(elt){
 function generateHtml(filtered){
 
     let html="";
+        html += `<h1>Recherche par : "${ search }"</h1><br/>`
+
     for(let datum of filtered){
-        html +=`
+        html +=` 
         <div class="col-12 postlist alternative">
+       
         <a href="${ datum.url }" class="url-title"><h2>${ datum.title }</h2></a>
         
         
@@ -38,8 +41,8 @@ function generateHtml(filtered){
         ${ datum.author }
     </div>
     <div class="tag raw">  `;
-        // const cpt = "if(cpt == ${ tag }) {active};";
-      
+    
+    
         for(let tag of datum.tags.split(',')){
             html += `  
                     <a class=" p-1 ${ tag == search ? "active" : "" }" href="/tag.html?tag=${ tag }">

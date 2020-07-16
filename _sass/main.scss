@@ -33,6 +33,11 @@ body {
     max-width: 300px;
     max-height: 200px;
 }
+.active{
+    &--carousel{
+        color: black;
+    }
+}
 
 h1, h2, h3 {
     font-family: 'Robotofont';
