@@ -1,7 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 let search;
 
-
 function isRelevant(elt){
     return hasCategory(elt) || hasTags(elt) || hasTitle(elt) || hasAuthor(elt);
 }
@@ -34,19 +33,22 @@ function generateHtml(filtered){
             <br/>
         ${ datum.content }
         <br/>
+        <div class="row">
+        <div class="col author p-1 ">
         ${ datum.author }
-        <br/>
-        `;
-        let cpt = "if(cpt == ${ tag }) {active}";
+    </div>
+    <div class="tag raw">  `;
+        // const cpt = "if(cpt == ${ tag }) {active};";
+      
         for(let tag of datum.tags.split(',')){
-            html += `
-                    <a class="cpt" href="/tag.html?tag=${ tag }">
+            html += `  
+                    <a class=" p-1 ${ tag == search ? "active" : "" }" href="/tag.html?tag=${ tag }">
                         ${ tag }
                     </a>
+                    
                     `;
         }
-
-        html += "</div>";
+        html += "</div></div></div>";
     }
 
     return html;

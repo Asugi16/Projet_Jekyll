@@ -1,6 +1,5 @@
----
-layout: default
-
+--- 
+layout: default 
 ---
 
 <div class="container">
@@ -9,23 +8,28 @@ layout: default
 
     <h1>Dernière revue de code</h1>
     <div class="row ">
-        {% assign categorie = site.codes | where: 'categorie', page.category_key %}
-        {% for code in categorie %}
+        {% assign categorie = site.codes | where: 'categorie', page.category_key %} {% for code in categorie %}
 
         <div class="col-12 postlist alternative">
 
             <h2><a href="{{ code.url | relative_url }}" class="url-title">{{ code.title }}</a></h2>
             <div class="contentsCR">
                 {{ code.content | truncatewords: 30 }} <br/><br/>
-                codé par: {{ code.author }}
-                <br/>
-                {% for tag in code.tags %}
-                <a href="/tag.html?tag={{ tag }}">
-                 {{ tag }}
-                </a>
-                {% endfor %}
+                <div class="row">
+                    <div class="col author p-1 ">
+                        codé par: {{ code.author }}
+                    </div>
+                    <div class="col tag">
+                        {% for tag in code.tags %}
+                              <a href="/tag.html?tag={{ tag }}">
+                                 {{ tag }}
+                              </a> 
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
         </div>
-        {% endfor %}
-    </div>
+                  
+                {% endfor %}
+</div>  
 </div>
