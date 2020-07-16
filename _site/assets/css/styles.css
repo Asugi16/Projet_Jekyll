@@ -32,6 +32,8 @@ a:hover { color: #ff607b; text-decoration: none; }
 
 .tag { text-align: right; }
 
+.badge-secondary { border: solid 1px #353130; border-radius: 20%; background-color: #353130; margin: 1px; }
+
 .navbar-custom .navbar-nav .nav-link { color: white; margin-right: 20px; }
 
 .navbar-custom { background-color: #353130; }
