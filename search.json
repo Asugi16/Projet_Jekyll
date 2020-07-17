@@ -17,7 +17,7 @@ layout: null
         {%- for category in site.categories -%}
             {
                 "title": "{{ category.title }}",
-                "url": "{{ category.url }}",
+                "url": "{{ category.url | relative_url }}",
                 "key": "{{ category.category_key }}"
             }
             {%- if category.url != site.categories[last_index].url -%}
@@ -34,7 +34,7 @@ layout: null
                 "image": "{{ post.image }}",
                 "content": "{{ post.content | strip_html | strip_newlines | truncatewords: 10 }}",
                 "author": "{{ post.author }}",
-                "url": "{{ post.url }}",
+                "url": "{{ post.url | relative_url }}",
                 "tags":  "{{ post.tags | join: ',' }}",
                 "category": "{{ post.categorie }}"
             }
@@ -46,13 +46,13 @@ layout: null
     "codes": [
         {%- assign last_index = site.codes.size | minus: 1 -%}
         {%- for code in site.codes -%}
-        {% assign urldefault = '/assets/images/' | append: code.categorie | append: '-icon.png' | relative_url %}
+        {% assign urldefault = '/Projet_Jekyll/assets/images/' | append: code.categorie | append: '-icon.png' | relative_url %}
             {
                 "title": "{{ code.title }}",
-                "image": "{{ urldefault }}",
+                "image": "{{ urldefault | relative_url }}",
                 "content": "{{ code.content | strip_html | strip_newlines | truncatewords: 10 }}",
                 "author": "{{ code.author }}",
-                "url": "{{ code.url }}",
+                "url": "{{ code.url | relative_url }}",
                 "tags":  "{{ code.tags | join: ',' }}",
                 "category": "{{ code.categorie }}"
             }

@@ -1,6 +1,6 @@
-@font-face { font-family: 'Robotofont'; src: url("/assets/font/RobotoCondensed-Light-webfont.woff") format("woff"); }
+@font-face { font-family: 'Robotofont'; src: url("/Projet_Jekyll/assets/font/RobotoCondensed-Light-webfont.woff") format("woff"); }
 
-@font-face { font-family: 'HelveticaNeuefont'; src: url("/assets/font/HelveticaNeue-Light.otf") format("opentype"); }
+@font-face { font-family: 'HelveticaNeuefont'; src: url("/Projet_Jekyll/assets/font/HelveticaNeue-Light.otf") format("opentype"); }
 
 body { display: flex; flex-direction: column; min-height: 100vh; }
 
@@ -49,7 +49,7 @@ a:hover { color: #ff607b; text-decoration: none; }
 /* Change color of dropdown links on hover */
 .dropdown-menu :hover { background-color: #353130; color: white; }
 
-.navbar-toggler-icon { background-image: url(/assets/images/menu-icon.png); width: 70px; height: 70px; }
+.navbar-toggler-icon { background-image: url(/Projet_Jekyll/assets/images/menu-icon.png); width: 70px; height: 70px; }
 
 .navbar-toggler-custom-toggler { width: 20px; }
 
