@@ -1,3 +1,5 @@
+baseurl: /Projet_Jekyll
+
 collections:
   codes:
     output: true  
