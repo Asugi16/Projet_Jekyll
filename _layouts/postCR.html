@@ -9,10 +9,10 @@ layout: default
     <div class="col">
         
         {% if page.codeimg == null %}
-            {% assign urldefault = '/Projet_Jekyll/assets/images/' | append: page.categorie | append: '-icon.png' | relative_url %}
+            {% assign urldefault = '/assets/images/' | append: page.categorie | append: '-icon.png' | relative_url %}
             <a href="{{ urldefault }}" target="_blank"><img class=" w-50 " src="{{ urldefault }}" alt="{{ page.title }}"></a>
         {% else %}
-            {% assign url = '/Projet_Jekyll/assets/images/' | append: page.codeimg | relative_url %}
+            {% assign url = '/assets/images/' | append: page.codeimg | relative_url %}
             <a href="{{ url }}" target="_blank"><img class=" w-50 " src="{{ url }}" alt="{{ page.title }}"></a>
         {% endif %}
   

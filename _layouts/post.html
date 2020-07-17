@@ -7,14 +7,14 @@
 
     <p class="row ">
         <div class="col">
-         <img class=" w-25 " src="{{ page.image }}" alt="{{ page.title }}"> <br/>{{ page.date | date_to_string }}
+         <img class=" w-25 " src="{{ page.image | relative_url }}" alt="{{ page.title }}"> <br/>{{ page.date | date_to_string }}
         </div>
     </p>
 {{ content }}
 {{ page.author }}<br/>
 
 {% for tag in page.tags %}
-<a class="badge-secondary" href="/tag.html?tag={{ tag }}">
+<a class="badge-secondary" href="/Projet_Jekyll/tag.html?tag={{ tag }}">
     {{ tag }}</a>
 {% endfor %}
 </div>

@@ -83,7 +83,7 @@ function generateHtml(data){
                     for(let tag of datum.tags.split(',')){
                         // Constitution du code html pour un tag, ajout dans notre variable de stockage (html)
                         html += `  
-                        <a class=" p-1 badge-secondary ${ tag == search ? "nav-active" : "" }" href="/tag.html?tag=${ tag }">
+                        <a class=" p-1 badge-secondary ${ tag == search ? "nav-active" : "" }" href="/Projet_Jekyll/tag.html?tag=${ tag }">
                             ${ tag }
                         </a>
                         `;
@@ -106,7 +106,7 @@ function generateHtml(data){
  */
 function generateResults(mode){
     // Récupération asynchrone des données json, en les demandant au serveur
-    fetch('/search.json')
+    fetch('/Projet_Jekyll/search.json')
         // On parse ces données en utilisant le format JSON
         .then(res => res.json())
         // data représente l'ensemble de nos données telles que présentes dans le JSON téléchargé, au format JS

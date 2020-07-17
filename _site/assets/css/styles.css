@@ -8,9 +8,9 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
 
 .carousel-img-perso { align-content: center; height: 50%; }
 
-.carousel-control-prev-icon { background-image: url(/assets/images/arrow.png); height: 50px; width: 50px; }
+.carousel-control-prev-icon { background-image: url(/Projet_Jekyll/assets/images/arrow.png); height: 50px; width: 50px; }
 
-.carousel-control-next-icon { background-image: url(/assets/images/right-arrow.png); height: 50px; width: 50px; }
+.carousel-control-next-icon { background-image: url(/Projet_Jekyll/assets/images/right-arrow.png); height: 50px; width: 50px; }
 
 .carousel-img-perso { max-width: 300px; max-height: 200px; }
 
