@@ -1,8 +1,4 @@
 collections:
-  categories:
-    output: true
-  categoriesCR:
-    output: true
   codes:
     output: true  
   authors:
@@ -21,16 +17,6 @@ defaults:
       layout: "post"
   - scope:
       path:
-      type: "categories"
-    values:
-      layout: category
-  - scope:
-      path:
-      type: "categoriesCR"
-    values:
-      layout: categoryCR
-  - scope:
-      path:
       type: "codes"
     values:
       layout: postCR
@@ -38,3 +24,20 @@ defaults:
       path: 
     values:
       layout: "default"
+
+
+data_output:
+  - name: categories
+    options:
+      - path: categories
+        name_from: key
+        values:
+          layout: category
+        dynamic_values:
+          category_key: key
+      - path: categoriesCR
+        name_from: key
+        values:
+          layout: categoryCR
+        dynamic_values:
+          category_key: key

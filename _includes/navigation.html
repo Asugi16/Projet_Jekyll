@@ -14,16 +14,18 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
                     <!-- boucle qui prend dans data les articles -->
-                    {% for item in site.categories %}
-                    <a class="dropdown-item" href="{{item.url}}">{{item.category_key}}</a> {% endfor %}
+                    {% for item in site.data.categories %}
+                        <a class="dropdown-item" href="{{ '/categories/' | append: item.key | append: '.html' | relative_url }}">{{item.name}}</a> 
+                    {% endfor %}
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle nav-link-spacewords" href="code_review.html" id="navbardropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Revue de Code</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <!-- boucle qui prend dans data les articles -->
-                    {% for item in site.categoriesCR %}
-                    <a class="dropdown-item" href="{{item.url}}">{{item.category_key}}</a> {% endfor %}
+                    {% for item in site.data.categories %}
+                        <a class="dropdown-item" href="{{ '/categoriesCR/' | append: item.key | append: '.html' | relative_url }}">{{item.name}}</a> 
+                    {% endfor %}
                 </div>
             </li>
             <li class="nav-item">
